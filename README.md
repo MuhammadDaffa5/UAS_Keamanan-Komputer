@@ -1,4 +1,6 @@
-# 💨 Sistem Otomatis Pemantau & Kontrol Kualitas Udara (AQMS)
+# Sistem Otomatis Pemantau & Kontrol Kualitas Udara (AQMS)
+
+**Oleh: M. Daffa' al haq.S (09030282327028), Muhammad Rifki (09030582327082), Siti Anisah Chyntia Bella (09030282327019)**
 
 ## Deskripsi Proyek
 
