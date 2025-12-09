@@ -12,12 +12,19 @@ Proyek ini mengimplementasikan sistem **Sistem Otomatis Pemantau dan Kontrol Kua
 
 ## Komponen Hardware yang Digunakan
 
-| Komponen | Fungsi Utama |
-| :--- | :--- |
-| **Mikrokontroler** | Arduino Uno | Otak pemroses data dan pengontrol aktuator. |
-| **Sensor Gas** | MQ135 | Input: Mengukur konsentrasi polutan gas dan menghasilkan nilai Analog (A0). |
-| **Aktuator** | Kipas DC / Ventilasi | Output: Aksi korektif untuk memperbaiki kualitas udara. |
+KOMPONEN HARDWARE SISTEM AQMS
 
+1. Mikrokontroler:
+   - Nama: Arduino Uno
+   - Fungsi Utama: Otak pemroses data dan pengontrol aktuator.
+
+2. Sensor Gas:
+   - Nama: MQ135
+   - Fungsi Utama: Input, mengukur konsentrasi polutan gas dan menghasilkan nilai Analog (A0).
+
+3. Aktuator:
+   - Nama: Kipas DC / Ventilasi
+   - Fungsi Utama: Output, aksi korektif untuk memperbaiki kualitas udara.
 ---
 
 ## Cara Kerja Sistem AQMS (Fokus pada Stabilitas)
@@ -46,7 +53,7 @@ Serangan MITM ini terjadi di jalur komunikasi USB/Serial. Skrip Python di Kali L
 
 * **Platform:** Kali Linux Virtual Machine (VM) dengan USB Passthrough aktif.
 * **Dependencies:** Python 3 dan Library pyserial.
-    ```bash
+    ```
     pip install pyserial
     ```
 * **Langkah Eksekusi:**
@@ -54,5 +61,5 @@ Serangan MITM ini terjadi di jalur komunikasi USB/Serial. Skrip Python di Kali L
     1.  Tentukan port serial Arduino di Kali (`/dev/ttyACM0` atau `/dev/ttyUSB0`).
     2.  Pastikan SERIAL_PORT di mitm_serial.py sudah dikonfigurasi.
     3.  Jalankan skrip (setelah mengaktifkan venv jika digunakan):
-        ```bash
+        ```
         python3 mitm_serial.py
